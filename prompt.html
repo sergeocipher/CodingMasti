@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Search</title>
+    <link rel="stylesheet" href="prompt.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="heading">🔎 Search Coding Questions</h2>
+
+        <div class="search-box">
+            <input type="text" id="query" class="search-input" placeholder="Enter your coding question">
+            
+            <select id="site-filter" class="search-dropdown">
+                <option value="">All Websites</option>
+                <option value="site:codewars.com/kata">CodeWars</option>
+                <option value="site:hackerrank.com/contests">HackerRank Contests</option>
+                <option value="site:leetcode.com/problems">LeetCode</option>
+                <option value="site:codeforces.com/problemset/problem">Codeforces</option>
+            </select>
+
+            <button onclick="generateLinks(true)" class="search-button">Search</button>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+        </div>
+
+        <div class="links" id="results"></div>
+
+        <button id="load-more" class="load-more hidden" onclick="generateLinks(false)">Load More</button>
+
+        <button onclick="location.href='library.html'" class="library-button">📚 View Library</button>
+    </div>
+
+    <script src="prompt.js"></script>
+</body>
+</html>
