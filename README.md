@@ -53,7 +53,6 @@ This project provides a streamlined interface for developers to quickly find and
 - 🌍 **Filtered Search** – Search results from predefined websites (LeetCode, Codeforces, etc.).
 - 📂 **Library Management** – Save, view, and delete bookmarked question links.
 - 🔄 **Navigation** – Switch between search and saved questions.
-- 🌙 **Dark Mode Support** – Optional dark mode for better readability.
 
 ---
 
